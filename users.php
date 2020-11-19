@@ -99,10 +99,15 @@ if($_SESSION["role"] != 1) {
 			<?php
 				if($_SESSION["role"] == 1) {
 					echo '<a href="users.php">Users</a>';
+					echo '<a href="cart.php">Cart</a>
+        			<a href="orders.php">Orders</a>
+        			<a href="profile.php">Profile</a>
+        			<a href="shop.php?logout=true">Logout</a>';
+				} else {
+					header('Location : shop.php?logout=true');
 				}
 			?>
-			<a href="profile.php">Profile</a>
-			<a href="index.php?logout=true">Logout</a>
+			
 		</nav>
 	</div>
 
@@ -115,7 +120,7 @@ if($_SESSION["role"] != 1) {
 	</div>
 
 	<div class="loginContU">
-			<div class="logB">Login</div>
+			<div class="logB">Profile</div>
 		    <form class="loginForm" action="users.php" method="post">
 		      <?php 
 		    		echo $edit;

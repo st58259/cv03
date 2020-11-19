@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: mainFont;
+	/*background-color: #507DBC;*/
+}
+
+@font-face {
+	font-family: mainFont;
+	src: url(Archivo-Regular.ttf);
+}
+
+h2 {
+	float: left;;
+	width: 100px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-left: 20px;
+	font-weight: normal;
+}
+
+.menu {
+	width: 100%;
+	height: 50px;
+	background-color: #507DBC;
+}
+
+nav {
+	width: 500px;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	float: right;
+}
+
+nav a {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	padding-top: 15px;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: #262626;
+	display: block;
+	display: block;
+	float: left;
+}
+
+nav a::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #507DBC;
+  transition: 500ms;
+}
+
+nav a:hover::after {
+  width: 100%;
+  background: white;
+}
+
+
+.catalog-item {
+	width: 200px;
+	background-color: beige;
+	height: 300px;
+	margin: 5px;
+}
+
+.catalog-img {
+	font-size: 100px;
+}
+
+.cart-button, .catalog-buy-button {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid yellow;
+	background-color: yellowgreen;
+	text-align: center;
+}
+
+#catalog-items {
+	display: flex;
+	margin: auto;
+	width: 70%;
+	margin-top: 100px;
+}
+
+#cart-items {
+	display: flex;
+	margin: auto;
+	width: 70%;
+	margin-top: 100px;
+	flex-wrap: wrap
+}
+
+a.catalog-buy-button {
+	display: block;
+}
+
+.cart-item {
+	justify-content: space-between;
+	display: flex;
+	margin: 5px;
+	border: 1px solid yellowgreen;
+	padding: 5px;
+	width: 100%;
+}
+
+.cart-img {
+	font-size: 40px;
+}
+
+.cart-name {
+	padding-top: 20px;
+}
+
+.cart-quantity {
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+.cart-price {
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+.cart-control {
+	display: flex;
+}
+
+.cart-button {
+	margin-right: 1px;
+	padding: 0;
+	width: 25px;
+	height: 22px;
+	margin-top: 15px;
+	padding-top: 3px;
+	text-align: center;
+	text-decoration: none;
+	color: #507DBC;
+}
+
+#cart-total-price {
+	font-weight: bold;
+	width: 100%;
+	float: left;
+	position: absolute;
+	top: 130;
+}
+
+.order-button {
+	margin: auto;
+	width: 200px;
+	height: 30px;
+	border: 1px solid;
+	display: block;
+	color: #507DBC;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 5px;
+	font-size: 25px;
+	margin-top: 20px;
+
+}
+
+
+.order-date {
+	margin: 5px;
+	font-weight: bold;
+	padding: 5px;
+	width: 100%;
+}
